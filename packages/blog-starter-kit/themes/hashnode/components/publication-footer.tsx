@@ -34,6 +34,25 @@ function PublicationFooter(props: any) {
             &copy;{new Date().getFullYear()} {title || `${authorName}'s Blog`}
           </p>
 
+        </div>
+        {disableFooterBranding ? (
+          <>
+            {logo && (
+              <div className="flex flex-col items-center">
+                <Link href="#" className="relative block h-10 w-40">
+                  <Image
+                    layout="fill"
+                    alt={title || `${authorName}'s ${isTeam ? 'team' : ''} blog`}
+                    src={resizeImage(logo, { w: 1000, h: 250, c: 'thumb' })}
+                  />
+                </Link>
+              </div>
+            )}
+          </>
+        ) : (
+          <div className="flex flex-col items-center">
+
+          </div>
 
           
         )}
