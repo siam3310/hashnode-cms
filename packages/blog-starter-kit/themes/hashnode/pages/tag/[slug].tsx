@@ -72,17 +72,6 @@ export default function Post({ publication, posts, tag, slug, currentMenuId }: P
 						</div>
 						{tag && (
 						<div className="flex w-full flex-col items-start xl:w-auto xl:items-end xl:text-right">
-							<a
-								className="mb-2 flex flex-row items-center whitespace-nowrap rounded-lg border bg-white px-4 py-2 font-medium text-blue-600 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
-								href={`https://hashnode.com/n/${tag.slug}`}
-								aria-label="See more articles from tag on Hashnode"
-								target="_Blank"
-								rel="noopener"
-							>
-								<span>More content</span>
-								<ExternalLinkSVG className="ml-1 h-4 w-4 fill-current" />
-							</a>
-							<p className="text-sm text-slate-700 dark:text-slate-400">Read more stories on Hashnode</p>
 						</div>
 						)}
 						</div>
@@ -91,7 +80,7 @@ export default function Post({ publication, posts, tag, slug, currentMenuId }: P
 						<div className="my-10 flex flex-col items-center justify-center">
 						<hr className="w-full border-t dark:border-slate-800" />
 						<p className="-mt-5 bg-white p-2 font-medium text-slate-600 dark:bg-slate-900 dark:text-slate-400">
-							Articles with this tag
+							Movies/Series with this tag
 						</p>
 						</div>
 					)}
