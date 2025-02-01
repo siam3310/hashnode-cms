@@ -193,7 +193,7 @@ const PublicationSearch = (props: Props) => {
             {isInputEmpty && (
               <div className="my-4 flex flex-row items-center justify-center text-slate-500 dark:text-slate-300">
                 <SearchSVG className="mr-2.5 h-5 w-5 stroke-current" />
-                <DialogPrimitive.Title className="font-normal">Search articles from this blog</DialogPrimitive.Title>
+                <DialogPrimitive.Title className="font-normal">Search movies/series from this web</DialogPrimitive.Title>
               </div>
             )}
             {!isLoading && isResultEmpty ? (
